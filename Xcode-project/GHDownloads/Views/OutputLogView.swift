@@ -27,9 +27,9 @@ struct OutputLogView: View {
                             ForEach(Array(lines.enumerated()), id: \.offset) { index, line in
                                 Text(verbatim: line)
 //                                    .font(.system(.footnote, design: .monospaced))
-                                    .font(.system(UIDevice.current.userInterfaceIdiom == .phone ? .caption2 : .body, design: .monospaced))
+                                    .font(.system(UIDevice.current.userInterfaceIdiom == .phone ? .caption2 : .footnote, design: .monospaced))
                                     .frame(maxWidth: .infinity, alignment: .leading)
-//                                    .foregroundStyle(.secondary)
+                                    .foregroundStyle(.secondary)
                                     .fixedSize(horizontal: true, vertical: true)
                                     .id("line-\(index)")
                             }
