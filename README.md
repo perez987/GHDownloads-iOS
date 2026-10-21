@@ -71,7 +71,7 @@ A Personal Access Token (classic) is used to authenticate requests to the GitHub
 ## Report behavior
 
 1. Tap **Run** to start the report. **Cancel** stops it at any time.
-2. If a token is saved and its owner matches the configured username, the app lists every repository owned by the account, including private ones. Otherwise it lists the public repositories of the user (or organization).
+2. If a token is saved and its owner matches the configured username, the app lists every repository owned by the account, including private ones.
 3. For each repository, the app sums the `download_count` of every asset in every release.
 4. The output log shows a table with the downloads per repository, the grand total, and the number of repositories analyzed and with downloads. Lines remain continuous without wrapping on iPhone, iPad, and Mac (Designed for iPad); scroll horizontally to read long lines.
 5. Tap **Copy** to copy the whole output to the clipboard, or **Clear** to empty the log.
